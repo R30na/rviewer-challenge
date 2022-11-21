@@ -1,0 +1,26 @@
+@import "variables";
+@import "mixins";
+
+.container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: $headerBgColor;
+}
+
+.logo {
+  @include sm {
+    margin: 0;
+  }
+
+  @include md {
+    margin: 0;
+  }
+
+  @include xl {
+    margin: {
+      left: calc((100% - 1200px) / 2);
+    }
+  }
+}
