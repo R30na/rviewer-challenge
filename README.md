@@ -2,7 +2,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First install the dependencies:
+
+```bash
+npm i
+# or
+yarn
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -12,13 +20,21 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+The Application is developed by `Next.js` as in FullStack using `TypeScript`. The API implemented by `GraphQL` server using `Apollo Server` and the client is getting data using `Apollo Client`.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+The styling is done by `Sass` and SCSS and the application is `responsive` in all screen sizes.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The GraphQL server API return the data in `pagination` using `offset` and `limit` values. Also the `Filtering` is done in the backend and the filtered data is returned in pagination. The data is persisted in `Redux` store in the frontend using `Redux-toolkit`.
 
-## Learn More
+You can check out the live version deployed to Vercel:
+
+[https://rviewer-challenge.vercel.app/](https://rviewer-challenge.vercel.app/)
+
+<!-- [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`. -->
+
+<!-- The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages. -->
+
+<!-- ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -31,4 +47,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details. -->
