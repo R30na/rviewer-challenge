@@ -1,0 +1,41 @@
+@import "variables";
+@import "mixins";
+
+.container {
+  $root: &;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 12px;
+  padding: 0px 14px;
+  background-color: $bodyBgColor;
+
+  @include xs {
+    grid-template-columns: auto;
+  }
+  @include sm {
+    grid-template-columns: auto auto;
+    padding: 0px calc((100% - 460px) / 2);
+  }
+  @include md {
+    grid-template-columns: auto auto auto;
+    padding: 0px calc((100% - 696px) / 2);
+  }
+  @include xl {
+    grid-template-columns: auto auto auto auto;
+    padding: 0px calc((100% - 932px) / 2);
+  }
+  @include xxl {
+    grid-template-columns: auto auto auto auto auto;
+    padding: 0px calc((100% - 1168px) / 2);
+  }
+}
+
+.noResult {
+  color: $textColor;
+  font-size: $normal-font-size;
+  display: flex;
+  width: 100%;
+  min-height: $min-height;
+  justify-content: center;
+}

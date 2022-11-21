@@ -1,0 +1,38 @@
+@import "variables";
+@import "mixins";
+
+.container {
+  width: 100%;
+  height: 224px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $footerBgColor;
+}
+
+.appDownloads {
+  display: flex;
+  gap: 14px;
+  margin: {
+    bottom: 56px;
+  }
+}
+
+.copyright {
+  color: $textColor;
+  font-size: $small-font-size;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.35px;
+  text-align: center;
+  margin: {
+    bottom: 22.39px;
+  }
+}
+
+.logo {
+  margin: {
+    top: 14px;
+    bottom: 40.95px;
+  }
+}
